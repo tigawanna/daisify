@@ -4,16 +4,16 @@ Convert your tailwind components to use DaisyUi themes for easeof customization
 
 
 usage 
-run `daisyfy` 
+run `daisify` 
 
 Commands 
 
 - daisify shadcn
   To convert your shadcn tailwind components to use daisyui themes
 ```sh
-npx daisyfy shadcn
-yarn daisyfy shadcn
-pnpm dlx daisyfy shadcn
+npx daisify shadcn
+yarn daisify shadcn
+pnpm dlx daisify shadcn
 ```
 
 
@@ -21,7 +21,7 @@ pnpm dlx daisyfy shadcn
 options 
 
 ```sh
-Usage: daisyfy shadcn [options]
+Usage: daisify shadcn [options]
 
 convert shadcn components to use daisyui themes
 
@@ -34,7 +34,7 @@ It will try to infer the components directory from the ts config if it falis it 
 the dafult is   `src/components/ui`   
 
 ```sh
-npx daisyfy shadcn -d src/components/ui
+npx daisify shadcn -d src/components/ui
 ```
 Also remeber to later your `tailwind.config.js` and use 
 

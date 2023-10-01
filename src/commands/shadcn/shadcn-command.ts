@@ -18,9 +18,9 @@ export const daisyfyShadcnCommand = program
     try {
       const opts = await shadcn_command_options(options)
        await daisyfyShadcn(opts)
-       process.exit(0)
+      //  process.exit(0)
       } catch (error: any) {
-      printHelpers.error("error running daisyfy shadcn" + error);
+      printHelpers.error("error running daisify shadcn" + error);
       process.exit(1)
     }
 });

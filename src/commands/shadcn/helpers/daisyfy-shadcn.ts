@@ -6,6 +6,7 @@ import { resolveImport } from "#/src/utils/helpers/pkg-manager/tsconfig";
 import { textPrompt } from "#/src/utils/helpers/clack/prompts";
 import { loadConfig } from "tsconfig-paths";
 import { TshadcnOptions } from "../shadcn-args";
+import { printHelpers } from "#/src/utils/helpers/print-tools";
 
 export async function daisyfyShadcn(options?:TshadcnOptions) {
   try {
@@ -43,6 +44,7 @@ export async function daisyfyShadcn(options?:TshadcnOptions) {
       ],
     });
   } catch (error: any) {
-    console.error(error);
+      printHelpers.error("error running daisify shadcn" + error);
+      throw error
   }
 }
