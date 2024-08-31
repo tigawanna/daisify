@@ -1,6 +1,6 @@
 # Daisify
 
-Convert your tailwind components to use DaisyUi themes for easeof customization 
+Convert your tailwind components to use DaisyUi themes 
 
 
 usage 
